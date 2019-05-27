@@ -48,7 +48,11 @@ public class CicdController {
 	    return mav;
 	}
 
-	
+	@PostMapping("/githook")
+	public void receiveHookGit(RequestHandledEvent e) {
+		System.out.println("111111111111111111");
+		System.out.println(e);
+	}
 	
 	private List<Repos> getListRepos(String accessToken) {
 		String url = "https://api.github.com/user/repos";
