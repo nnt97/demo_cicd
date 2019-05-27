@@ -42,6 +42,7 @@ public class CicdController {
 	public ModelAndView show(@RequestParam(required = false) String code, RedirectAttributes redir) {
 		if (code==null) return new ModelAndView("/");
 		String accessToken = getAccessToken(code);
+		System.out.println(accessToken);
 		List<Repos> listRepos = getListRepos(accessToken);
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("redirect:/home");
