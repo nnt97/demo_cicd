@@ -49,9 +49,8 @@ public class CicdController {
 	}
 
 	@PostMapping("/githook")
-	public void receiveHookGit(RequestHandledEvent e) {
+	public void receiveHookGit() {
 		System.out.println("111111111111111111");
-		System.out.println(e);
 	}
 	
 	private List<Repos> getListRepos(String accessToken) {
