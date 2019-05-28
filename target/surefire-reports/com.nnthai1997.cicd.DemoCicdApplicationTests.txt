@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.nnthai1997.cicd.DemoCicdApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.276 s - in com.nnthai1997.cicd.DemoCicdApplicationTests
